@@ -1,0 +1,14 @@
+
+.Homepage{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.component{
+    transition: transform 0.2s ease-in-out;
+}
+
+.component:hover{
+    transform: scale(1.1);
+}
