@@ -12,7 +12,7 @@ import Spepagetwo from './pages/Homepage/SubHomepages/Spepagetwo';
 import Spepagethree from './pages/Homepage/SubHomepages/Spepagethree';
 import Spepagefour from './pages/Homepage/SubHomepages/Spepagefour';
 import Speapagefive from './pages/Homepage/SubHomepages/Speapagefive';
-
+import Navigation from './pages/nav';
 
 
 
@@ -28,7 +28,7 @@ function App() {
 
     <div className='App'>
 
-    <nav> 
+    {/* <nav> 
       <ul  className="w-11/12 flex flex-wrap max-w-max space-x-4 gap-x-4 mx-auto py-4 justify-items-end">
         <li> <NavLink to = '/'>HOME</NavLink> </li>
         <li> <NavLink to = '/registration'> Registration</NavLink> </li>
@@ -36,7 +36,8 @@ function App() {
         <li><NavLink to='/Teaminfo'> Teaminfo</NavLink></li>
         
       </ul>
-    </nav>
+    </nav> */}
+    <Navigation />
 
     
     <Routes>

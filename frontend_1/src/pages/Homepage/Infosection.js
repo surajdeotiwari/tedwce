@@ -3,18 +3,77 @@ import React from 'react'
 const Infosection = () => {
   return (
 
-    <div className='flex items-center justify-center w-full h-60vh'>
+    <div class="text-center p-8">
+    <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+        Join us TEDX Event in WCESangli on 21st October, 2023
+    </h2>
 
-        <div className='text-center '>
-
-         <h1 className="text-4xl font-bold">Our Journey</h1>
-         <p className='"mt-4 text-lg"'>April 1945  was an Austrian-born German politician who was the dictator of Germany from 1933 until his suicide in 1945. He rose to power as the leader of the Nazi Party,[a] becoming the chancellor in 1933 and then taking the title of Führer und Reichskanzler in 1934.[b] During his dictatorship, he initiated World War II in Europe by invading Poland on 1 September 1939. He was closely involved in military operations throughout the war and was central to the perpetration of the Holocaust, the genocide of about six million Jews and millions of other victims.
-
-         Hitler was born in Braunau am Inn in Austria-Hungary and was raised near Linz. He lived in Vienna later in the first decade of the 1900s and moved to Germany in 1913. He was decorated during his service in the German Army in World War I. In 1919, he joined the German Workers' Party (DAP), the precursor of the Nazi Party, and was appointed leader of the Nazi Party in 1921. In 1923, he attempted to seize governmental power in a failed coup in Munich and was imprisoned with a sentence of five years. In jail, he dictated the first volume of his autobiography and political manifesto Mein Kampf ("My Struggle"). After his early release in 1924, Hitler gained popular support by attacking the Treaty of Versailles and promoting pan-Germanism, anti-Semitism and anti-communism with charismatic oratory and Nazi propaganda. He frequently denounced international capitalism and communism as part of a Jewish conspiracy.
-
-         By November 1932, the Nazi Party held the most seats in the German Reichstag but did not have a majority. As a result, no party was able to form a majority parliamentary coalition in support of a candidate for chancellor. The former chancellor Franz von Papen and other conservative leaders persuaded President Paul von Hindenburg to appoint Hitler as chancellor on 30 January 1933. Shortly after, the Reichstag passed the Enabling Act of 1933 which began the process of transforming the Weimar Republic</p>
+    <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://picsum.photos/400/240" alt="gem" class="inline-block rounded shadow-lg border border-merino-400"/>
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
+            <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+                Simple integration
+            </h3>
+            <p class="sm:text-lg mt-6">
+                Use the LocaleData gem to download translations directly into your Ruby on Rails
+                projects using the provided command line interface. Just create a project and follow
+                the step-by-step instructions.
+            </p>
         </div>
     </div>
+
+    <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://picsum.photos/400/240" alt="project members" class="inline-block rounded shadow-lg border border-merino-400"/>
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
+            <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+                Easy collaboration
+            </h3>
+            <p class="sm:text-lg mt-6">
+                All LocaleData projects are private. Each project can have multiple collaborators
+                with different roles and access permissions. You determine who can see and edit
+                your translations. Just add admins, developers, translators and configure their
+                access rights.
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap items-center mt-20 text-left  text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://picsum.photos/400/240" alt="editor" class="inline-block rounded shadow-lg border border-merino-400"/>
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
+            <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+                No more syntax errors
+            </h3>
+            <p class="sm:text-lg mt-6">
+                LocaleData provides you easy import/export functions for your YAML files.
+                Use a simple editor with many predefined languages to manage your locales.
+                LocaleData also supports multiple translation types, such as simple text, plural forms,
+                numbers, booleans, symbols, arrays, ...
+            </p>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="https://picsum.photos/400/240" alt="bulk editing" class="inline-block rounded shadow-lg border border-merino-400"/>
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
+            <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+                Bulk editing
+            </h3>
+            <p class="sm:text-lg mt-6">
+                Do you need to change the path of many translation keys at once? No problem, just
+                use the bulk editing feature and enjoy the results.
+            </p>
+        </div>
+    </div>
+
+</div>
   )
 }
 
