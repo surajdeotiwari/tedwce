@@ -14,7 +14,7 @@ const Mainnav = ()=>{
           </div>
           <ul class="social-icon">
             <li class="social-icon__item">
-              <a class="social-icon__link" href="#">
+              <a class="social-icon__link" href="/">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
@@ -36,27 +36,27 @@ const Mainnav = ()=>{
           </ul>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="/">
                 HOME
               </a>
             </li>
-            <li class="menu__item">
+            {/* <li class="menu__item">
               <a class="menu__link" href="#">
                 ABOUT
               </a>
-            </li>
+            </li> */}
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="/registration">
                 REGISTRATION
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="/team">
                 TEAM
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
+              <a class="menu__link" href="/terms">
                 FAQ & TERMS
               </a>
             </li>

@@ -1,17 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  // State to manage mobile menu toggle
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Function to toggle mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    // Function to handle scrolling and adding/removing the 'sticky' class
+    const handleScroll = () => {
+      const navbar = document.getElementById("navbar-default");
+      const offset = window.scrollY;
+
+      if (offset > 50) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    // Add scroll event listener when component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove scroll event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-black text-white dark:bg-black dark:text-white border-gray-200">
+    <nav
+      id="navbar-default"
+      className="bg-black text-white dark:bg-black dark:text-white border-gray-200"
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center">
           <img
@@ -71,29 +94,29 @@ const Navigation = () => {
                 Register
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/Speakerinfo"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-red-500"
               >
                 Speaker
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
-                to="/Teaminfo"
+                to="/team"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-red-500"
               >
                 Team
               </Link>
             </li>
             <li>
-              <Link
+              {/* <Link
                 to="/contact"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-red-500"
               >
                 Contacts
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </div>
