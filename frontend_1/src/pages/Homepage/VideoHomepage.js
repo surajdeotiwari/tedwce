@@ -7,11 +7,10 @@ const VideoHomepage = () => {
       <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video
           className="min-w-full min-h-full absolute object-cover"
-          src="https://res.cloudinary.com/dbqg4wpkh/video/upload/v1691864062/TedxOfficial_lvkqq7.mp4"
+          src="https://res.cloudinary.com/dtymf31sf/video/upload/v1696756560/WhatsApp_Video_2023-10-08_at_00.22.42_7b8fdaa2_s2y9ee.mp4"
           type="video/mp4"
           autoPlay
           muted
-          loop
         ></video>
       </div>
     </section>
